@@ -1,4 +1,5 @@
-import SearchBar from './features/SearchBar';
+import SearchBar from "./features/SearchBar";
+import Data from "./features/Data";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       </header>
 
       <main>
-
+        <Data />
       </main>
     </div>
   );
