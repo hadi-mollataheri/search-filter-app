@@ -1,11 +1,21 @@
+import {useState} from 'react';
+
 import SearchBar from "./features/SearchBar";
 import Data from "./features/Data";
 
 function App() {
+  // Create a state for storing the user search input
+  const [searchInput, setSearchInput] = useState('');
+
   return (
     <div className="text-center">
       <header>
-        <SearchBar />
+        {/* Pass the setSearchInput to SearchBar component to 
+        so it can sync the searchInput with search value of user and store it in our state(searchInput) */}
+        <SearchBar setSearchInput={setSearchInput} />
+
+        <p>{`Test for searchInput update: ${searchInput}`}</p>
+
       </header>
 
       <main>
