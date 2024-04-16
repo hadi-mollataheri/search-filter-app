@@ -1,9 +1,15 @@
+import SearchBar from './features/SearchBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="text-center">
+      <header>
+        <SearchBar />
       </header>
+
+      <main>
+
+      </main>
     </div>
   );
 }
