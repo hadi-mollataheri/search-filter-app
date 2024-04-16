@@ -1,4 +1,4 @@
-// This component is responsible for showing name of the people from our mock data.
+// This component is responsible for showing name of the people from our mock data according to user search.
 
 import React from "react";
 import MockDate from "../utilities/MOCK_DATA.json";
@@ -12,8 +12,8 @@ function Data({ searchInput }) {
     return MockDate.map((personObject) => {
       if (
         !searchInput ||
-        personObject.first_name.toLowerCase().includes(searchInput) ||
-        personObject.last_name.toLowerCase().includes(searchInput)
+        personObject.first_name.toLowerCase().includes(searchInput.toLowerCase()) ||
+        personObject.last_name.toLowerCase().includes(searchInput.toLowerCase())
       ) {
         return (
           <p
