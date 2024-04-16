@@ -1,10 +1,11 @@
 import React from "react";
 
-function SearchBar({setSearchInput}) {
-
-  const handleChange = ({target}) => {
+function SearchBar({ setSearchInput }) {
+  // Create an event handler for input's onChange so that we can use it for
+  // updating the App's searchInput state via the passed in setSearchInput passed in prop.
+  const handleChange = ({ target }) => {
     setSearchInput(target.value);
-  }
+  };
 
   return (
     <input
