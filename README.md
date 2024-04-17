@@ -1,7 +1,7 @@
 # Explanation
 This is a *Search Filter* app that I built with **React.js**.
 
-Concepts: controlled component, props
+Topics: Controlled component, Props, State hook ,TailwindCss
 
 I embarked on this project as a series of practice exercises after dedicating a couple of years to learning front-end web development. My goal was twofold: to enhance my coding skills and bolster my resume, ultimately preparing myself for the job market.
 
