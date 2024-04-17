@@ -5,7 +5,7 @@ Concepts: controlled component, props
 
 I embarked on this project as a series of practice exercises after dedicating a couple of years to learning front-end web development. My goal was twofold: to enhance my coding skills and bolster my resume, ultimately preparing myself for the job market.
 
-Project number: 3
+Project number: 4
 
 [**You can see this web app in GitGub-Pages**](https://hadi-mollataheri.github.io/search-filter-app/)
 
