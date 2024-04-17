@@ -17,6 +17,7 @@ function Data({ searchInput }) {
       if (!searchInput || fullName.includes(searchInput.toLowerCase())) {
         return (
           <p
+            className="p-1"
             key={personObject.id}
           >{`${personObject.first_name} ${personObject.last_name}`}</p>
         );
@@ -27,7 +28,7 @@ function Data({ searchInput }) {
     });
   }
 
-  return <div>{filter()}</div>;
+  return (<div>{filter()}</div>);
 }
 
 export default Data;

@@ -8,7 +8,7 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
 
   return (
-    <div className="text-center">
+    <div className="flex justify-center items-center flex-col text-center">
       <header>
         {/* Pass the setSearchInput to SearchBar component to 
         so it can sync the searchInput with search value of user and store it in our state(searchInput) */}
