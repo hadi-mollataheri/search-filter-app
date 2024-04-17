@@ -1,7 +1,7 @@
 // This component is responsible for showing name of the people from our mock data according to user search.
 
 import React from "react";
-import MockDate from "../utilities/MOCK_DATA.json";
+import MockDate from "../../utilities/MOCK_DATA.json";
 
 function Data({ searchInput }) {
   // Use searchInput sate prop to update the shown names
@@ -10,11 +10,11 @@ function Data({ searchInput }) {
 
   function filter() {
     return MockDate.map((personObject) => {
-      const fullName = `${personObject.first_name} ${personObject.last_name}`.toLowerCase();
-      if (
-        !searchInput ||
-        fullName.includes(searchInput.toLowerCase())
-      ) {
+      // Concatenate first and last names and turn it to lowerCase for evert personObj
+      // and then check for matches in fullName(Spaces is recognized too and it's more cleaner)
+      const fullName =
+        `${personObject.first_name} ${personObject.last_name}`.toLowerCase();
+      if (!searchInput || fullName.includes(searchInput.toLowerCase())) {
         return (
           <p
             key={personObject.id}
