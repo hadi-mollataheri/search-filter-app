@@ -10,10 +10,10 @@ function Data({ searchInput }) {
 
   function filter() {
     return MockDate.map((personObject) => {
+      const fullName = `${personObject.first_name} ${personObject.last_name}`.toLowerCase();
       if (
         !searchInput ||
-        personObject.first_name.toLowerCase().includes(searchInput.toLowerCase()) ||
-        personObject.last_name.toLowerCase().includes(searchInput.toLowerCase())
+        fullName.includes(searchInput.toLowerCase())
       ) {
         return (
           <p
