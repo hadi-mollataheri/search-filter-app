@@ -12,7 +12,7 @@ function App() {
       <header>
         {/* Pass the setSearchInput to SearchBar component to 
         so it can sync the searchInput with search value of user and store it in our state(searchInput) */}
-        <SearchBar setSearchInput={setSearchInput} />
+        <SearchBar searchInput={searchInput} setSearchInput={setSearchInput} />
       </header>
 
       <main>
